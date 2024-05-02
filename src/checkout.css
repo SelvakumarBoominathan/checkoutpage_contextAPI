@@ -73,3 +73,12 @@
 h3{
   margin : 0;
 }
+
+
+@media screen and (width:650px) {
+  .Section_top{
+    display: flex;
+    flex-direction: column;
+    /* height: 250px; */
+  }
+}
