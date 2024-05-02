@@ -75,8 +75,8 @@ h3{
 }
 
 
-@media screen and (width:650px) {
-  .Section_top{
+@media screen and (max-width: 650px) {
+  .Section_top {
     display: flex;
     flex-direction: column;
     /* height: 250px; */
