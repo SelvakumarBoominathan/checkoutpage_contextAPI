@@ -66,17 +66,17 @@ const Products = [
 },
 {
     "id": 4,
-    "title": "OPPOF19",
-    "description": "OPPO F19 is officially announced on April 2021.",
+    "title": "OnePlus Nord",
+    "description": "OnePlus Nord is officially announced on April 2021.",
     "starrating" :"⭐⭐⭐⭐⭐" ,
     "price": 280,
     "discountPercentage": 17.91,
     "rating": 4.3,
     "stock": 123,
-    "brand": "OPPO",
+    "brand": "OnePlus",
     "category": "smartphones",
     "thumbnail": "https://i.dummyjson.com/data/products/4/thumbnail.jpg",
-    "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/5/x/0/-original-imaggvy34uxyxnzz.jpeg?q=70"
+    "images": "https://m.media-amazon.com/images/I/61nxQ62qglL._AC_UL480_QL65_.jpg"
 },
 {
     "id": 5,
