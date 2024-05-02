@@ -13,7 +13,7 @@ export default function Checkout({ Products }) {
   const calculateTotal = (index) => {
     return quantities[index] * Products[index].price;
   };
-
+  
   return (
     <>
       {Products.map((Product, index) => (
