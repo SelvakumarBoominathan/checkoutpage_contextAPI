@@ -11,13 +11,13 @@ const Total_Price = () => {
     <>
       <div className="grand_container_totalcost">
               <div className="Total_div">
-                <h2>subtotal : </h2>
-                <h2>$ {total}</h2>
+                <div><h2>subtotal : </h2></div>
+                <div><h2>$ {total}</h2></div>
               </div>
 
               <div className="Total_div">
-              <h2>Total : </h2>
-              <h2 style={{color : "red", fontWeight: 800}} > $ {total+20}</h2>
+                <div><h2>Total : </h2></div>
+                <div><h2 style={{color : "red", fontWeight: 800}} > $ {total+20}</h2></div>
               </div>
       </div>
     </>

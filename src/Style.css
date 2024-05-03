@@ -77,6 +77,10 @@
   margin-left: 170px;
 }
 
+.Total_div > *{
+  width: 50%;
+}
+
 h2{
   font-size: clamp(10px, 4vw, 21px)
 }
@@ -102,9 +106,10 @@ h3{
 }
 
 
-/* @media screen and (max-width: 650px) {
-  .Section_top {
-    display: flex;
-    flex-direction: column;
+@media screen and (max-width: 650px) {
+  .Total_div{
+    width: 100%;
+    margin-left: 10px;
   }
-} */
+
+}
