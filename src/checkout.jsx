@@ -1,15 +1,29 @@
-import React, { useState } from "react";
-import './checkout.css';
+import React, { useState, useEffect, useContext } from "react";
+import TotalContext from './totalProvider';
+import './Style.css';
+
 
 export default function Checkout({ Products }) {
+
+  const { setTotal } = useContext(TotalContext);
   const [quantities, setQuantities] = useState(Products.map(() => 1));
-  
+  const [totalCost, setTotalCost] = useState(0);
+  setTotal(totalCost);
+  useEffect(() => {
+    // Calculate initial total cost when Products or quantities change
+    let initialTotal = 0;
+    Products.forEach((product, index) => {
+      initialTotal += product.price * quantities[index];
+    });
+    setTotalCost(initialTotal);
+  }, [Products, quantities]);
 
   const handleQuantityChange = (index, event) => {
     const newQuantities = [...quantities];
     newQuantities[index] = parseInt(event.target.value);
     setQuantities(newQuantities);
   };
+
 
 
   const calculateTotal = (index) => {
@@ -42,11 +56,11 @@ export default function Checkout({ Products }) {
            <option value="8">8</option>
           <option value="9">9</option>
           <option value="10">10</option>
+          
               </select>
               <h2>$ {calculateTotal(index)}</h2>
             </div>
           </div>
-          <button> REMOVE</button>
         </div>
       ))}
     </>

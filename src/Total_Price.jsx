@@ -1,25 +1,26 @@
-import React, { useState } from 'react';
+import React, { useContext } from 'react';
+import './Style.css';
+import TotalContext from './totalProvider';
 
 
 const Total_Price = () => {
+  const { total } = useContext(TotalContext);
+
   return (
+
+    <>
       <div className="grand_container_totalcost">
+              <div className="Total_div">
+                <h2>subtotal : </h2>
+                <h2>$ {total}</h2>
+              </div>
 
-
-       <div className="Total_div">
-    <h2>subtotal : </h2>
-    <h2>$ 200</h2>
-  </div>
-
-  <div className="Total_div">
-    <h2>Total : </h2>
-    <h2>234 $</h2>
-  </div>
-
-
-    
- </div>
-
+              <div className="Total_div">
+              <h2>Total : </h2>
+              <h2 style={{color : "red", fontWeight: 800}} > $ {total+20}</h2>
+              </div>
+      </div>
+    </>
 
   )
 }

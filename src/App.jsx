@@ -1,17 +1,15 @@
-import { useState } from 'react'
 import './App.css';
 import Checkout from './checkout';
 import Total from './Total_Price';
+import { TotalProvider } from './totalProvider';
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
+    <TotalProvider>
       <Checkout Products = {Products}/>
       <Total/>
-    
-    </>
+    </TotalProvider>
   )
 }
 

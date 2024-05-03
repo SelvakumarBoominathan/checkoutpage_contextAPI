@@ -1,11 +1,11 @@
 
-export const initialState = {
-  basket : [],
+// export const initialState = {
+//   basket : [],
 
-}
+// }
 
-const reducer = (state, action) => {
+// const reducer = (state, action) => {
 
-}
+// }
 
-export default reducer;
+// export default reducer;
