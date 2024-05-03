@@ -17,7 +17,7 @@ const Total_Price = () => {
 
               <div className="Total_div">
                 <div><h2>Total : </h2></div>
-                <div><h2 style={{color : "red", fontWeight: 800}} > $ {total+20}</h2></div>
+                <div><h2 style={{color : "red", fontWeight: 800}} > $ {total}</h2></div>
               </div>
       </div>
     </>
