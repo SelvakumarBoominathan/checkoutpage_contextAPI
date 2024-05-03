@@ -46,6 +46,7 @@ export default function Checkout({ Products }) {
               <h2>$ {calculateTotal(index)}</h2>
             </div>
           </div>
+          <button> REMOVE</button>
         </div>
       ))}
     </>

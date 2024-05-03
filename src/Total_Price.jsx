@@ -1,8 +1,17 @@
-import React, { useState }from 'react';
+import React, { useState } from 'react';
+
 
 const Total_Price = () => {
-  return (
-    <div className="grand_container">
+  return 
+}
+
+export default Total_Price
+
+
+
+
+
+{/* <div className="grand_container">
 
 <div className="Parent_container">
        <div className="section_middle">
@@ -25,9 +34,4 @@ const Total_Price = () => {
 
 </div>
       
-    // </div>
-  )
-}
-
-export default Total_Price
-
+ </div> */}
