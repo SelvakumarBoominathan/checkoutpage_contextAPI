@@ -51,9 +51,9 @@ const Products = [
 },
 {
     "id": 3,
-    "title": "Samsung Universe 9",
+    "title": "Galaxy S9",
     "description": "Samsung's new variant which goes beyond Galaxy to the Universe",
-    "starrating" :"⭐⭐⭐⭐" ,
+    "starrating" :"⭐⭐⭐⭐⭐" ,
     "price": 1249,
     "discountPercentage": 15.46,
     "rating": 4.09,

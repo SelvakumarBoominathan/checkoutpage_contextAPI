@@ -3,6 +3,7 @@ import './checkout.css';
 
 export default function Checkout({ Products }) {
   const [quantities, setQuantities] = useState(Products.map(() => 1));
+  
 
   const handleQuantityChange = (index, event) => {
     const newQuantities = [...quantities];
@@ -10,14 +11,15 @@ export default function Checkout({ Products }) {
     setQuantities(newQuantities);
   };
 
+
   const calculateTotal = (index) => {
     return quantities[index] * Products[index].price;
   };
-  
+
   return (
     <>
       {Products.map((Product, index) => (
-        <div className="Section_top" key={index}>
+        <div className="Cart_Section" key={index}>
           <div className="Img_container">
             <img src={Product.images} alt={Product.title}></img>
           </div>
@@ -41,7 +43,7 @@ export default function Checkout({ Products }) {
           <option value="9">9</option>
           <option value="10">10</option>
               </select>
-              <h3>$ {calculateTotal(index)}</h3>
+              <h2>$ {calculateTotal(index)}</h2>
             </div>
           </div>
         </div>
