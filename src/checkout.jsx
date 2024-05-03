@@ -3,18 +3,21 @@ import TotalContext from './totalProvider';
 import './Style.css';
 
 
+
+
 export default function Checkout({ Products }) {
 
   const { setTotal } = useContext(TotalContext);
   const [quantities, setQuantities] = useState(Products.map(() => 1));
   const [totalCost, setTotalCost] = useState(0);
-  setTotal(totalCost);
+  
   useEffect(() => {
     // Calculate initial total cost when Products or quantities change
     let initialTotal = 0;
     Products.forEach((product, index) => {
       initialTotal += product.price * quantities[index];
     });
+    setTotal(totalCost);
     setTotalCost(initialTotal);
   }, [Products, quantities]);
 
@@ -23,8 +26,7 @@ export default function Checkout({ Products }) {
     newQuantities[index] = parseInt(event.target.value);
     setQuantities(newQuantities);
   };
-
-
+  
 
   const calculateTotal = (index) => {
     return quantities[index] * Products[index].price;
