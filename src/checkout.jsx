@@ -9,7 +9,13 @@ export default function Checkout({ Products }) {
 
   const { setTotal } = useContext(TotalContext);
   const [quantities, setQuantities] = useState(Products.map(() => 1));
-  const [totalCost, setTotalCost] = useState(0);
+  const [totalCost, setTotalCost] = useState(() => {
+    let initialTotal = 0;
+    Products.forEach((product, index) => {
+      initialTotal += product.price * quantities[index];
+    });
+    return initialTotal;
+  });
   
   useEffect(() => {
     // Calculate initial total cost when Products or quantities change
