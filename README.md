@@ -9,7 +9,10 @@ Currently, two official plugins are available:
 
 
 
-It is a simple cart page that uses context API to use the state without using a prop.
+It is a simple Checkout page created using React and Context API. It has a functionality of updating the total price based on the count of total items present in the cart section. The  state centralization has been done by using Context API.
+
 Single style sheet used to style components.
+
 2 main components are used other than App.jsx
+
 seperate file () is used for context API.
